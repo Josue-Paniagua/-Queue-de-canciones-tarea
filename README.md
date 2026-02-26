@@ -53,18 +53,24 @@ Durante la reproduccion siempre se vacia primero la cola de highPriority y luego
 
 ##Decisiones técnicas
 
-  -Se implemento una cola enlazada manual en lugar de usar estructuras de java como se dice en las intrucciones.
-  -Utilice un nodo generico demoninado con T como se pedia para permitir una reutilziacion de esta.
-  -Se mantuvo los punteos head y tail para lograr las operacione o(1) en los metodos enqueue(añadir ) y en el dequeue(eliminar)
-  -La sepracion de logica en los modulos como la de SONG, MAIN y la de playlist.
+-Se implemento una cola enlazada manual en lugar de usar estructuras de java como se dice en las intrucciones.
+-Utilice un nodo generico demoninado con T como se pedia para permitir una reutilziacion de esta.
+-Se mantuvo los punteos head y tail para lograr las operacione o(1) en los metodos enqueue(añadir ) y en el dequeue(eliminar)
+ -La sepracion de logica en los modulos como la de SONG, MAIN y la de playlist.
   --------------------------------------------------------------------------
 
   ##¿Cómo implementaste la prioridad?
   
   Bueno pues la prioridad la implemente modificando la estrucutra interna de la cola, en su lugar cree dos colas independientes que son:
+
+  
   --cola de prioridad alta = highPriority 
+
+  
   --cola de priotidad normal = normalPriority.
-   Para esto tambien coloque dos ciclso un if y otro while, el if lo que hace es separar las cnaciones dependiendo de su prioridad siendo delegado 1 como alto y 2 como normal quedando algo asi: 
+
+  
+Para esto tambien coloque dos ciclso un if y otro while, el if lo que hace es separar las cnaciones dependiendo de su prioridad siendo delegado 1 como alto y 2 como normal quedando algo asi: 
    
    
    if (s1.getPriority()==1) 
