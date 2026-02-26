@@ -28,8 +28,6 @@ Separé la implementacion de la estructura de datos en una libreria independient
 Desde la carpeta del proyecto data structure ejecuto el comando en el cmd: mvn clean install, esto realiza limpieza del proyecto, la compilacionn, la genereacion del archivo .jar y la instalacion en el reposito local m2.
 
 -----------------------------------------------------------------
-
-
 ##Cómo instalar en local
 
 
