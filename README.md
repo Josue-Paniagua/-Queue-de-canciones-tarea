@@ -15,12 +15,16 @@ Esta tarea esta divida en dos modulos:
 ------------------------------------------------------------------------------
 
 ## Cómo compilar la librería
+
 Desde la carpeta del proyecto data structure ejecuto el comando en el cmd: mvn clean install, esto realiza limpieza del proyecto, la compilacionn, la genereacion del archivo .jar y la instalacion en el reposito local m2
 -----------------------------------------------------------------
 
 ##Cómo instalar en local
+
+
 La intalacin en local se realiza al aejecutar en la terminal mvn clean install el archivo JAR se guarda en el m2.
 
+----------------------------------------------------
 ##Cómo compilar el handler
 
 --para esto desde la carpeta del proyecto queueHandler ejecute en cdm el comando mvn clean package que esto genrea el .JAR ejecutbale del sistema.
@@ -43,7 +47,7 @@ Al momento de agregar una cancion eso me sirve para separa las priodirades siend
 
 1 Alta y 2 normal como lo decia en las instrucciones.
 
-*Durante la reproduccion siempre se vacia primero la cola de highPriority y luego se procesan las cnaciones de prioridad normal gracias a este metodo pues se me garantiza que la simulacion de canciones mas importantes se reproduzcan de primero.
+Durante la reproduccion siempre se vacia primero la cola de highPriority y luego se procesan las cnaciones de prioridad normal gracias a este metodo pues se me garantiza que la simulacion de canciones mas importantes se reproduzcan de primero.
 -------------------------------------------------------------------------------
 
 ##Decisiones técnicas
@@ -59,7 +63,10 @@ Al momento de agregar una cancion eso me sirve para separa las priodirades siend
   Bueno pues la prioridad la implemente modificando la estrucutra interna de la cola, en su lugar cree dos colas independientes que son:
   --cola de prioridad alta = highPriority 
   --cola de priotidad normal = normalPriority.
-   Para esto tambien coloque dos ciclso un if y otro while, el if lo que hace es separar las cnaciones dependiendo de su prioridad siendo delegado 1 como alto y 2 como normal quedando algo asi: if (s1.getPriority()==1) 
+   Para esto tambien coloque dos ciclso un if y otro while, el if lo que hace es separar las cnaciones dependiendo de su prioridad siendo delegado 1 como alto y 2 como normal quedando algo asi: 
+   
+   
+   if (s1.getPriority()==1) 
 			highPriority.enqueue(s1);
 		else 
 			normalPriority.enqueue(s1);
