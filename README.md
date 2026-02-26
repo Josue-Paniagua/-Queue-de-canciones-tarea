@@ -6,7 +6,8 @@ Esta tarea esta divida en dos modulos:
 ##queueHandler: Aplicacion que consume la librerai y que esta ejecuta la simulacion de la cancion.
 
 --------------------------------------------
-  Separé la implemtentacion de la estructua de datos en una libreria independiente la de data structure y la aplicacion de queueHandler consume la libreria como dependencia maven en el repositorio local.
+
+Separé la implemtentacion de la estructua de datos en una libreria independiente la de data structure y la aplicacion de queueHandler consume la libreria como dependencia maven en el repositorio local.
   En esta implemente:
   1.Cambio clase node <T>
   2. clase queueLinked<T>
