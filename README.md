@@ -38,13 +38,11 @@ La intalacion en local se realiza al aejecutar en la terminal mvn clean install 
 --para esto desde la carpeta del proyecto queueHandler ejecute en cdm el comando mvn clean package que esto genrea el .JAR ejecutbale del sistema.
 
 --------------------------------------------------------------------
-
 #Cómo ejecutar desde consola
 
 -Para esto una vez generado el ajr ubicarse dentro de la carpeta target del hanlder y ejecute el comndo java -jar queueHandler-0.0.1-SNAPSHOT.jar.
 
 ---------------------------------------------------------------------
-
 ##Explicación del diseño
 
 --Para el sistema utilizo dos colas enlazadas que son:
@@ -58,7 +56,6 @@ Al momento de agregar una cancion eso me sirve para separa las priodirades siend
 Durante la reproduccion siempre se vacia primero la cola de highPriority y luego se procesan las cnaciones de prioridad normal gracias a este metodo pues se me garantiza que la simulacion de canciones mas importantes se reproduzcan de primero.
 
 -------------------------------------------------------------------------------
-
 ##Decisiones técnicas
 
 -Se implemento una cola enlazada manual en lugar de usar estructuras de java como se dice en las intrucciones.
