@@ -22,26 +22,32 @@ Desde la carpeta del proyecto data structure ejecuto el comando en el cmd: mvn c
 La intalacin en local se realiza al aejecutar en la terminal mvn clean install el archivo JAR se guarda en el m2.
 
 ##Cómo compilar el handler
-para esto desde la carpeta del proyecto queueHandler ejecute en cdm el comando mvn clean package que esto genrea el .JAR ejecutbale del sistema.
+
+--para esto desde la carpeta del proyecto queueHandler ejecute en cdm el comando mvn clean package que esto genrea el .JAR ejecutbale del sistema.
 
 --------------------------------------------------------------------
 
 #Cómo ejecutar desde consola
+
 -Para esto una vez generado el ajr ubicarse dentro de la carpeta target del hanlder y ejecute el comndo java -jar queueHandler-0.0.1-SNAPSHOT.jar.
 
 ---------------------------------------------------------------------
 
 ##Explicación del diseño
+
 --Para el sistema utilizo dos colas enlazadas que son:
 .highPriority
 .normalPriority
 
-Al momento de agregar una cancion eso me sirve para separa las priodirades siendo 1 Alta y 2 normal como lo decia en las instrucciones.
+Al momento de agregar una cancion eso me sirve para separa las priodirades siendo 
+
+1 Alta y 2 normal como lo decia en las instrucciones.
 
 *Durante la reproduccion siempre se vacia primero la cola de highPriority y luego se procesan las cnaciones de prioridad normal gracias a este metodo pues se me garantiza que la simulacion de canciones mas importantes se reproduzcan de primero.
 -------------------------------------------------------------------------------
 
 ##Decisiones técnicas
+
   -Se implemento una cola enlazada manual en lugar de usar estructuras de java como se dice en las intrucciones.
   -Utilice un nodo generico demoninado con T como se pedia para permitir una reutilziacion de esta.
   -Se mantuvo los punteos head y tail para lograr las operacione o(1) en los metodos enqueue(añadir ) y en el dequeue(eliminar)
@@ -49,6 +55,7 @@ Al momento de agregar una cancion eso me sirve para separa las priodirades siend
   --------------------------------------------------------------------------
 
   ##¿Cómo implementaste la prioridad?
+  
   Bueno pues la prioridad la implemente modificando la estrucutra interna de la cola, en su lugar cree dos colas independientes que son:
   --cola de prioridad alta = highPriority 
   --cola de priotidad normal = normalPriority.
