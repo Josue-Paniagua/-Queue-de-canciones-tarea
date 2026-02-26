@@ -8,16 +8,21 @@ Esta tarea esta divida en dos modulos:
 --------------------------------------------
 
 Separé la implementacion de la estructura de datos en una libreria independiente la de data structure y la aplicacion de queueHandler consume la libreria como dependencia maven en el repositorio local.
+
   En esta implemente:
+  
   1.Cambio clase node <T>
+  
   2. clase queueLinked<T>
-  3. clase song 
-  4. sistema de prioridad de dos colas la priority y la normal 
+  
+  3. clase song
+     
+  5. sistema de prioridad de dos colas la priority y la normal 
 ------------------------------------------------------------------------------
 
 ## Cómo compilar la librería
 
-Desde la carpeta del proyecto data structure ejecuto el comando en el cmd: mvn clean install, esto realiza limpieza del proyecto, la compilacionn, la genereacion del archivo .jar y la instalacion en el reposito local m2
+Desde la carpeta del proyecto data structure ejecuto el comando en el cmd: mvn clean install, esto realiza limpieza del proyecto, la compilacionn, la genereacion del archivo .jar y la instalacion en el reposito local m2.
 -----------------------------------------------------------------
 
 ##Cómo instalar en local
@@ -56,8 +61,10 @@ Durante la reproduccion siempre se vacia primero la cola de highPriority y luego
 -Se implemento una cola enlazada manual en lugar de usar estructuras de java como se dice en las intrucciones.
 
 -Utilice un nodo generico demoninado con T como se pedia para permitir una reutilziacion de esta.
+
 -Se mantuvo los punteos head y tail para lograr las operacione o(1) en los metodos enqueue(añadir ) y en el dequeue(eliminar)
- -La sepracion de logica en los modulos como la de SONG, MAIN y la de playlist.
+
+-La sepracion de logica en los modulos como la de SONG, MAIN y la de playlist.
   --------------------------------------------------------------------------
 
   ##¿Cómo implementaste la prioridad?
