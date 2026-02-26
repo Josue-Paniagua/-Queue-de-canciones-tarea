@@ -30,8 +30,7 @@ Desde la carpeta del proyecto data structure ejecuto el comando en el cmd: mvn c
 -----------------------------------------------------------------
 ##Cómo instalar en local
 
-
-La intalacin en local se realiza al aejecutar en la terminal mvn clean install el archivo JAR se guarda en el m2.
+La intalacion en local se realiza al aejecutar en la terminal mvn clean install el archivo JAR se guarda en el m2.
 
 ----------------------------------------------------
 ##Cómo compilar el handler
