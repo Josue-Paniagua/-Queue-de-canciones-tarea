@@ -92,6 +92,11 @@ Para esto tambien coloque dos ciclso un if y otro while, el if lo que hace es se
 		    normalPriority.enqueue(s2); 
         y asi me tocaria con cada cancionq que yo qusiera agregar.
 
+
+	-----------------------------------------------------------
+
+	
+
 ##Cómo manejaste la simulación de duración
 
 La duracion de cada cancion la siumel Thread.sleep que se nos dio en las intrucciones con un valor de 1000 ya que eso representa 1 segundo por loq eu investigue esto genera una pausa de un segundo y utilize un ciclo for para simualr el tiempo total de repodurccion. 
